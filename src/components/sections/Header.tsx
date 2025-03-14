@@ -3,7 +3,6 @@ import { useContent, useLocation } from "@builder.io/qwik-city";
 import IconChevronDown from "../icons/IconChevronDown";
 import { Logo } from "../common/Logo";
 import MenuModal from "../widgets/MenuModal";
-import ToggleTheme from "../common/ToggleTheme";
 import IconTwitter from "../icons/IconTwitter";
 import IconTelegram from "../icons/IconTelegram";
 import { cn } from '@qwik-ui/utils';

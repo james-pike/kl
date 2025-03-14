@@ -4,7 +4,7 @@ import { buttonVariants } from "../ui/Button";
 import { LuX} from "@qwikest/icons/lucide";
 import { cn } from "@qwik-ui/utils";
 import { Logo } from "../common/Logo";
-\import IconHamburger from "../icons/IconHamburger";
+import IconHamburger from "../icons/IconHamburger";
 
 export default component$(() => {
   const show = useSignal(false);

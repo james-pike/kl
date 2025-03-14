@@ -4,42 +4,14 @@ import { buttonVariants } from "../ui/Button";
 import { LuX} from "@qwikest/icons/lucide";
 import { cn } from "@qwik-ui/utils";
 import { Logo } from "../common/Logo";
-import { Badge } from "../ui/Badge";
-import IconHamburger from "../icons/IconHamburger";
+\import IconHamburger from "../icons/IconHamburger";
 
 export default component$(() => {
   const show = useSignal(false);
   
 
   // Menu items array structure
-  const menuItems = [
-    { title: "Home", href: "/", badge: null },
-    { title: "About", href: "/about/", badge: null },
-  
-    { 
-      title: "Services", 
-      href: "/services/",
-      hasSubmenu: true,
-      subitems: [
-        { title: "Web Design", href: "/services/web-design" },
-        { title: "Development", href: "/services/development" },
-        { title: "SEO", href: "/services/seo" }
-      ]
-    },
-    { 
-      title: "Portfolio", 
-      href: "/gallery/", 
-      badge: <Badge class="absolute -top-0.1 left-14.5 bg-primary-300 text-white text-xs px-1 py-0 rounded">New</Badge> 
-    },
-    { 
-      title: "Reviews", 
-      href: "/reviews/", 
-      badge: <Badge class="absolute -top-0.1 left-14.5 bg-primary-300 text-white text-xs px-1 py-0 rounded">New</Badge> 
-    },
-    { title: "Technology", href: "/technology/", badge: null },
-    { title: "FAQ", href: "/faq/", badge: null },
-    { title: "Contact Us", href: "/contact/", badge: null }
-  ];
+
 
   // Get services subitems safely
 

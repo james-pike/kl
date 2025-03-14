@@ -1,17 +1,15 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import { Modal } from "../ui/Modal";
-import { Button, buttonVariants } from "../ui/Button";
-import { LuX, LuArrowLeft, LuChevronRight } from "@qwikest/icons/lucide";
+import { buttonVariants } from "../ui/Button";
+import { LuX} from "@qwikest/icons/lucide";
 import { cn } from "@qwik-ui/utils";
 import { Logo } from "../common/Logo";
 import { Badge } from "../ui/Badge";
 import IconHamburger from "../icons/IconHamburger";
-import { useLocation } from "@builder.io/qwik-city";
 
 export default component$(() => {
   const show = useSignal(false);
-  const isServicesSection = useSignal(false);
-  const location = useLocation();
+  
 
   // Menu items array structure
   const menuItems = [
@@ -44,8 +42,6 @@ export default component$(() => {
   ];
 
   // Get services subitems safely
-  const servicesItem = menuItems.find(item => item.hasSubmenu);
-  const servicesSubitems = servicesItem?.subitems ?? [];
 
   return (
     <>

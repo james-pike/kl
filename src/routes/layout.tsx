@@ -1,6 +1,5 @@
 import { component$, Slot, useVisibleTask$ } from "@builder.io/qwik";
 
-import Footer from "~/components/sections/Footer";
 import { inject } from "@vercel/analytics";
 import Header from "~/components/sections/Header";
 

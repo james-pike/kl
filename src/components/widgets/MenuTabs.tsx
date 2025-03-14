@@ -26,13 +26,13 @@ export default component$(() => {
   return (
     <Tabs.Root selectedClassName='bg-white' class="max-w-5xl mx-auto" selectedIndex={selectedIndex.value} onSelectedIndexChange$={(index) => (selectedIndex.value = index)}>
       {/* Responsive Tabs List sticky top-[92px] z-10 */}
-      <Tabs.List class="flex whitespace-nowrap overflow-x-auto overflow-y-hidden scrollbar-thin shadow-md">
-  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Wizard</Tabs.Tab>
-  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Elf</Tabs.Tab>
-  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Warrior</Tabs.Tab>
-  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Dragon</Tabs.Tab>
-  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Assasin</Tabs.Tab>
-  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Orc</Tabs.Tab>
+      <Tabs.List class="flex whitespace-nowrap overflow-x-auto overflow-y-hidden scrollbar-hidden shadow-md snap-x snap-mandatory">
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0 snap-start">Wizard</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0 snap-start">Elf</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0 snap-start">Warrior</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0 snap-start">Dragon</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0 snap-start">Assasin</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0 snap-start">Orc</Tabs.Tab>
 </Tabs.List>
 
       {/* Coffee Menu Panel */}

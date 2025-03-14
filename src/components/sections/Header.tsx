@@ -109,10 +109,8 @@ export default component$(() => {
               <Logo />
             </a>
             <div class="flex items-center md:hidden gap-0.5">
-              <a class="p-0 rounded-sm bg-yellow-50 dark:bg-gray-800 dark:border-gray-700 flex items-center h-full border border-yellow-200">
-                <ToggleTheme iconClass="w-6 h-6" />
-              </a>
-              <a href="/contact" class="p-2 bg-blue-50 rounded-sm flex items-center h-full dark:bg-gray-800 border border-blue-200 dark:border-gray-700">
+             
+              <a href="/" class="p-2 bg-blue-50 rounded-sm flex items-center h-full dark:bg-gray-800 border border-blue-200 dark:border-gray-700">
                 Get A Quote
               </a>
               <MenuModal />

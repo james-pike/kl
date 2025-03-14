@@ -4,14 +4,9 @@ import { Card } from '../ui/Card';
 import { Label } from '../ui/Label';
 import { Input } from '../ui/Input';
 import { Button } from '../ui/Button';
+import LogoClouds from '../sections/LogoClouds';
 
-const menuItems = [
-  { title: 'Espresso', description: 'Rich and bold espresso shot.', price: '$3.50', image: '/images/coffee.webp' },
-  { title: 'Cappuccino', description: 'Rich and bold espresso shot.', price: '$4.50', image: '/images/mocha.webp' },
-  { title: 'Latte', description: 'Rich and bold espresso shot.', price: '$4.00', image: '/images/mocha.webp' },
-  { title: 'Mocha', description: 'Rich and bold espresso shot.', price: '$4.75', image: '/images/coffee.webp' },
 
-];
 
 const teaItems = [
   { title: 'Matcha', description: 'Rich and bold espresso shot.', price: '$3.50', image: '/images/tea1.webp' },
@@ -31,32 +26,39 @@ export default component$(() => {
   return (
     <Tabs.Root selectedClassName='bg-white' class="max-w-5xl mx-auto" selectedIndex={selectedIndex.value} onSelectedIndexChange$={(index) => (selectedIndex.value = index)}>
       {/* Responsive Tabs List sticky top-[92px] z-10 */}
-      <Tabs.List class="grid grid-cols-4 sm:justify-start sm:inline-flex sm:space-x-4 w-full shadow-md ">
-        <Tabs.Tab class="px-4 py-2">Design</Tabs.Tab>
-        <Tabs.Tab class="px-4 py-2">Develop</Tabs.Tab>
-        <Tabs.Tab class="px-4 py-2">Branding</Tabs.Tab>
-        <Tabs.Tab class="px-4 py-2">Marketing</Tabs.Tab>
-      </Tabs.List>
+      <Tabs.List class="flex whitespace-nowrap overflow-x-auto overflow-y-hidden scrollbar-thin shadow-md">
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Wizard</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Elf</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Warrior</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Dragon</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Assasin</Tabs.Tab>
+  <Tabs.Tab class="px-4 py-2 flex-shrink-0">Orc</Tabs.Tab>
+</Tabs.List>
 
       {/* Coffee Menu Panel */}
       <Tabs.Panel>
   
       
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {menuItems.map((item, index) => (
-                <div key={index} class="bg-white shadow-md overflow-hidden border border-gray-200">
-                  <img width={1024} height={1024} src={item.image} alt={item.title} class="w-full h-40 object-cover" />
-                  <div class="p-3">
-                    <h3 class="text-lg font-semibold text-gray-900">{item.title}</h3>
-                    <p class="text-sm text-gray-600 mt-1">{item.description}</p>
-                    <p class="text-lg font-bold text-primary mt-2">{item.price}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <LogoClouds/>
   
     
       </Tabs.Panel>
+
+      <Tabs.Panel>
+  
+      
+  <LogoClouds/>
+
+
+</Tabs.Panel>
+
+<Tabs.Panel>
+  
+      
+  <LogoClouds/>
+
+
+</Tabs.Panel>
 
       {/* Tea Panel */}
       <Tabs.Panel>

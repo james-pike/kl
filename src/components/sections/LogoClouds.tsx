@@ -10,7 +10,7 @@ import { Tabs } from "~/components/ui/Tabs";
 
 const tabContent: TabContent[] = [
     {
-        title: "JavaScript",
+        title: "Glimmering Staff of the Magi",
         description: "powers interactive elements and dynamic functionality across our web projects. At our design agency, we leverage it to create engaging user experiences, from animated UI components to real-time data updates, ensuring our designs are both beautiful and functional.",
         icon: (
             <svg class="w-14 h-14 mx-auto" viewBox="0 0 128 128">

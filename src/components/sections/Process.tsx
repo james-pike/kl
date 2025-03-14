@@ -68,11 +68,11 @@ export default component$((props: Props) => {
                         <CardHeadline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} align="left" />
                     </Card.Header>
                     <Card.Content>
-<div class="motion-group md:col-start-2 md:row-start-1 order-2">
+<div class=" md:col-start-2 md:row-start-1 order-2">
           {items.map(({ title, description, icon: Icon }, index) => (
             <div
               key={`item-steps-${index}`}
-              class={`flex opacity-0 intersect-once intersect:opacity-100 intersect:motion-preset-slide-up motion-delay-[${index * 150}ms]`}
+              class={`flex `}
             >
               <div class="mr-4 flex flex-col items-center">
                 <div class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary-900">

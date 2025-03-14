@@ -78,10 +78,10 @@ export default component$(() => {
           </Carousel.Pagination>
           <a
             href="/services"
-            class="text-sm font-medium hover:underline"
+            class="text-sm font-medium hover:underline text-gray-850"
             style={{ transform: 'translateY(5px)' }} // Fine-tune downward shift
           >
-            Browse Portfolio -&gt;
+             -&gt;
           </a>
         </div>
       </Carousel.Root>

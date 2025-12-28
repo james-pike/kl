@@ -40,7 +40,7 @@ export default component$((props: Props) => {
           isDark ? "dark" : ""
         )}
       >
-        <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
+        <Headline title={title} highlight={highlight} classes={classes?.headline} />
      <InnerCarousel/>
       </div>
       </Card.Root>

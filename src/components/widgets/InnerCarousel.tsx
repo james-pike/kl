@@ -79,6 +79,14 @@ const innerRealm = [
     // badge: "/images/ironwill.png",
     // badgeText: "Iron Will Crest", // Added badgeText
   },
+    {
+    name: "Boje Masa",
+    role: "Dragon King",
+    image: "/images/boje.png",
+    alt: "Boje portrait",
+    // badge: "/images/ironwill.png",
+    // badgeText: "Iron Will Crest", // Added badgeText
+  },
 ];
 
 export default component$(() => {

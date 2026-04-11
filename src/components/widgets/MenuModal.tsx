@@ -14,10 +14,10 @@ export default component$(() => {
 
   // Menu items array structure
   const menuItems = [
-    { title: "Home", href: "/", badge: null },
     { title: "Story", href: "#story", badge: null },
     { title: "Classes", href: "#classes", badge: null },
     { title: "Inventory", href: "#inventory", badge: null },
+    { title: "Game", href: "#game", badge: null },
     { title: "Roadmap", href: "#roadmap", badge: null },
     { title: "Rarity Guide", href: "#rarity", badge: null },
     { title: "Team", href: "#team", badge: null },

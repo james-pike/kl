@@ -12,6 +12,7 @@ import Hero from "~/components/widgets/Hero";
 import Team from "~/components/widgets/Team";
 import Inventory from "~/components/widgets/Inventory";
 import Inner from "~/components/widgets/Inner";
+import Game from "~/components/widgets/Game";
 
 export default component$(() => {
   return (
@@ -43,12 +44,20 @@ export default component$(() => {
         items={[]}
       />
 
-      <Steps id="roadmap"  
+      <Game
+      id="game"
+      highlight="Game"
+      title="Battle Arena"
+      subtitle="Unleash your KasLords against rivals in epic battles on the BlockDag."
+      classes={{ subtitle: "text-xl text-balance" }}
+      items={[]}/>
+
+      <Steps id="roadmap"
        highlight="Roadmap"
       title="Journey Of The KasLords"
-      subtitle="In the realm of Kasparion, where the blockchain skies shimmer with infinite possibility." 
+      subtitle="In the realm of Kasparion, where the blockchain skies shimmer with infinite possibility."
       items={[]}/>
-    
+
        <Rarity
        id="rarity"
       highlight="Rarity"

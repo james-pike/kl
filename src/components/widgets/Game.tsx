@@ -31,7 +31,7 @@ export default component$((props: Props) => {
         <Card.Root class="bg-gray-900">
           <section
             id="game"
-            class="scroll-mt-16 w-full pt-10 md:pt-12 lg:pt-12 px-4 md:px-0"
+            class="scroll-mt-16 w-full pt-10 md:pt-12 lg:pt-12 px-1 md:px-0"
           >
             <Headline
               title={title}

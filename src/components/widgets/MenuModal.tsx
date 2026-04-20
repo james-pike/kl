@@ -1,7 +1,7 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import { LuX, LuArrowLeft, LuUsers, LuSparkles } from "@qwikest/icons/lucide";
 import { cn } from "@qwik-ui/utils";
-import { Link, useLocation } from "@builder.io/qwik-city";
+import { Link } from "@builder.io/qwik-city";
 import { Modal } from "../ui/Modal";
 import IconHamburger from "../icons/IconHamburger";
 import { buttonVariants } from "../ui/Button";
@@ -10,7 +10,6 @@ import { Card } from "../ui/Card";
 export default component$(() => {
   const show = useSignal(false);
   const isServicesSection = useSignal(false);
-  const location = useLocation();
 
   // Menu items array structure
   const menuItems = [
@@ -69,12 +68,7 @@ export default component$(() => {
                       <li key={item.title}>
                         <a
                           href={item.href}
-                          class={cn(
-                            "block text-gray-700 dark:text-gray-200 p-2 px-3 hover:bg-gray-200 dark:hover:bg-gray-700 font-medium transition-all duration-200 relative",
-                            (item.href === "/" && !location.url.hash) || location.url.hash === item.href
-                              ? "bg-white dark:bg-gray-700"
-                              : ""
-                          )}
+                          class="block text-gray-700 dark:text-gray-200 p-2 px-3 hover:bg-gray-200 dark:hover:bg-gray-700 font-medium transition-all duration-200 relative"
                           onClick$={() => (show.value = false)}
                         >
                           {item.title}

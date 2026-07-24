@@ -72,7 +72,7 @@ export default component$(() => {
       const ipfsBase = 'bafybeiaa6rock4x4u32yefrz5w2brl44d2sq2llpe7gbrmq3qwn5zi6yee';
       const imageFile = defaultNft.image.split('/').pop();
       const tokenURI = `ipfs://${ipfsBase}/${imageFile}`;
-      const imageUrl = `https://cache.krc721.stream/krc721/mainnet/optimized/KASLORDS/${defaultNft.name}`;
+      const imageUrl = `https://krc721-cache.kaspa.com/krc721/mainnet/optimized/KASLORDS/${defaultNft.name}`;
 
       const defaultRank = rankMap['1500'] || 0;
       console.log('Default NFT rank for ID 1500:', defaultRank); // Debug default rank
@@ -105,7 +105,7 @@ export default component$(() => {
       const ipfsBase = 'bafybeiaa6rock4x4u32yefrz5w2brl44d2sq2llpe7gbrmq3qwn5zi6yee';
       const imageFile = nft.image.split('/').pop();
       const tokenURI = `ipfs://${ipfsBase}/${imageFile}`;
-      const imageUrl = `https://cache.krc721.stream/krc721/mainnet/optimized/KASLORDS/${nft.name}`;
+      const imageUrl = `https://krc721-cache.kaspa.com/krc721/mainnet/optimized/KASLORDS/${nft.name}`;
 
       const rank = rankMap[nftSearchId.value] || 0;
       console.log(`Searching ID ${nftSearchId.value}, found rank: ${rank}`); // Debug lookup
